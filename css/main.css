@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
-.startpage {
+.page-with-img {
     background-image: url(../images/background.jpg);
     background-size: cover;
 }
@@ -13,16 +14,27 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.header__line {
-    display: inline-block;
-}
 .header__logo {
     width: 20%;
     min-width: 130px;
     text-align: center;
+    display: inline-block;
 }
 .header__menu {
     width: 80%;
+    display: inline-block;
+}
+.header__item {
+    float: left;
+    border: 2px solid darkcyan;
+    padding: 5px;
+    margin-right: -2px;
+    width: 30%;
+    text-align: center;
+    min-width: 100px;
+}
+.header__active {
+    background-color: darkcyan;
 }
 ul {
   list-style: none; 
@@ -33,19 +45,10 @@ a {
     text-decoration: none; 
     color: black;
 }
-.header-line__open {
-    background-color: darkcyan;
+a .header__item:hover {
+    background-color: aliceblue;
 }
-.item {
-    float: left;
-    border: 2px solid darkcyan;
-    padding: 5px;
-    margin-right: -2px;
-    width: 30%;
-    text-align: center;
-    min-width: 100px;
-}
-.mainfield__button {
+.start-button {
     position: absolute;
     top: 50%;
     right: 40%;
@@ -56,30 +59,23 @@ a {
     font-size: 22px;
     padding: 10px;
 }
-.mainfield__button:hover {
+.start-button:hover {
     background-color: aliceblue;
     color: cadetblue;
 }
-
-.aboutpage {
+.header-about {
+    opacity: 0.9;
+}
+.about-page {
     padding-left: 15%;
     padding-right: 15%;
     align-content: center;
-}
-.aboutpage p {
     text-align: justify;
 }
-.aboutpage img {
+.about-page img {
     width: 100%;
 }
 .top {
     font-size: 34px;
     list-style-position: inside;
-}
-
-.cl {
-    text-align: center;
-}
-.aboutlogo {
-    opacity: 1;
 }
