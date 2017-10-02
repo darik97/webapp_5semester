@@ -7,8 +7,6 @@ body {
     background-image: url(../images/background.jpg);
     background-size: cover;
 }
-
-
 .header {
     background-color: cadetblue;
     opacity: 0.8;
@@ -47,8 +45,6 @@ a {
     width: 30%;
     text-align: center;
 }
-
-
 .mainfield__button {
     position: absolute;
     top: 50%;
@@ -64,4 +60,16 @@ a {
 .mainfield__button:hover {
     background-color: aliceblue;
     color: cadetblue;
+}
+
+.aboutpage {
+    padding-left: 15%;
+    padding-right: 15%;
+    align-content: center;
+}
+.aboutpage p {
+    text-align: justify;
+}
+.aboutpage img {
+    width: 100%;
 }
