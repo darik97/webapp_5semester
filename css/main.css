@@ -33,7 +33,7 @@ body {
     text-align: center;
     min-width: 100px;
 }
-.header__active {
+.header__item-active {
     background-color: darkcyan;
 }
 ul {
