@@ -1,7 +1,6 @@
 <?php
     $page = $_GET['page'];
-    require ('menu.php');
-    require ('content.php');
+    require ('main.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +17,11 @@
                 <a href="index.php?page=1"><h2>GameName</h2></a>
             </div>
             <?php
-                echo Menu::getMenu($page);
+                echo Main::getMenu($page);
             ?>
         </nav>
         <?php
-             Content::getPage($page);
+             Main::getPage($page);
         ?>
     </body>
 </html>
